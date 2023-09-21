@@ -1,0 +1,165 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color:rgba(242, 240, 232, 0.584);
+  /* background-image: url('https://static.vecteezy.com/system/resources/previews/007/531/023/non_2x/beautiful-colorful-gradient-background-combination-of-bright-colors-soft-and-smooth-texture-used-for-background-free-vector.jpg'); */
+  
+  background-repeat: no-repeat;
+  background-size:16%;
+  background-position: center; 
+}
+header {
+  width:auto;
+  margin:-1%;
+}
+
+#main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 1%;
+}
+
+#chat-window {
+  width: 500px;
+  height: 550px;
+  border: 2px solid #655e5e6a;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: rgb(151, 151, 211);
+}
+
+#chat-messages {
+  height: 370px;
+  overflow-y: scroll;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#message-form {
+  display: flex;
+}
+
+#message-input {
+  flex: 1;
+  border-radius: 10px;
+
+}
+
+#message-form button {
+  margin-left: 10px;
+}
+
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #f7efe5;
+  color: rgb(213, 106, 67);
+  border: 2px solid tomato;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button[type="button"]:hover {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: tomato;
+  color: rgb(253, 250, 249);
+  border: 2px solid tomato;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#end-chat-button{
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(248, 245, 244);
+  color: rgb(253, 250, 249);
+  border: 2px solid tomato;
+  font-size: 1rem;
+  font-weight: bold;
+
+}
+/* Hide the scrollbar */
+#chat-messages::-webkit-scrollbar {
+  width: 0.5em; /* Adjust the width as needed */
+}
+
+#chat-messages::-webkit-scrollbar-track {
+  background-color: transparent; /* Change the color or remove it if not needed */
+}
+
+#chat-messages::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Change the color or remove it if not needed */
+}
+
+.bot-message {
+  font-family: "Roboto", sans-serif;
+  background-color: #b4624051; /* different light color */
+  text-align: justify; /* keep it right-aligned */
+  padding: 5px; /* added padding */
+  margin-top: 20px; /* added margin-top to create a gap */
+  margin-bottom: 10px;
+  margin-right: 10%;
+  display: flex;
+  color:white;
+  margin-left:5%;
+  float:left;
+  width:fit-content;
+  align-items: center;
+  font-style: italic;
+  border-radius: 20px 15px 20px 0px;
+}
+
+.user-message {
+  font-family: "Nunito", sans-serif;
+  background-color:rgba(216, 46, 12, 0.542); /* light color */
+  text-align: left; /* changed text align to left */
+  padding: 5px; /* added padding */
+  display: flex;
+  color:white;
+  width:fit-content;
+  float:right;
+  margin-right: 5%;
+  align-items: center;
+  font-style: italic;
+  border-radius: 20px 15px 0px 20px;
+}
+.user-message img,
+.bot-message img {
+  width: 30px; /* adjust the width of the icon */
+  height: 30px; /* adjust the height of the icon */
+  margin-right: 20px; /* add some margin to separate the icon from the message */
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 400px) {
+  #chat-window {
+    width: 90%;
+  }
+}
+.main-title {
+  background-color: black;
+    border-radius: 18px;
+    font-size:26px;
+    width:30%;
+    text-align: center;
+    padding: 2px;
+    margin-top: rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-bottom: 0.3rem;
+    color: #fffbf5;
+    font-style: italic;
+}
+.sub-title {
+  background-color: rgba(248, 59, 59, 0.918);
+  border-radius: 18px;
+  font-size:15px;
+  width:70%;
+  text-align: center;
+  padding: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 0.5rem;
+  color: #fffbf5;
+  margin-left: auto;
+  margin-right: auto;
+}
